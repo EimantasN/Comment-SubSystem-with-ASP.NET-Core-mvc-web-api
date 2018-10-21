@@ -19,6 +19,7 @@ namespace T120B143
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                                        .UseUrls("http://localhost:2000")
                 .UseStartup<Startup>();
     }
 }
